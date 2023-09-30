@@ -1,11 +1,11 @@
-# Fake Aadhaar Detection
-This project classifies the scanned aadhaar image to either real or fake image by doing two levels of testing. Fake images are the images that are digitally altered. 
+# Fake Image Detection
+This project classifies the scanned image to either real or fake image by doing two levels of testing. Fake images are the images that are digitally altered. 
 ## Level 1 Testing
 Whenever an image is altered using software tools they leave software signatures in the metadata of the image. Level 1 testing exploit this feature and tries to findout traces of any signature.
 It is the fastest and simplest way to classify but there are online tools/websites that helps to clean this type of information in metadata.
 MS Paint is a good example that doesn't attach its signature in the metadata of the image.
 ## Level 2 Testing
-It starts of by doing [ELA (Error Level Analysis)](http://fotoforensics.com/tutorial-ela.php) on the image and the result is given to [LBPH (Local Binary Patterns Histograms)](https://towardsdatascience.com/face-recognition-how-lbph-works-90ec258c3d6b)
+It starts of by doing [ELA (Error Level Analysis)] on the image and the result is given to [LBPH (Local Binary Patterns Histograms)]
 recognizer which decides whether it is fake or real image. Even though LBPH algorithm is used for face recognition, it can be used in this project for generating histograms and comparing them.
 
 
